@@ -23,3 +23,13 @@ setInterval(updateClock, 1000);
 
 //run it immediately so there is no delay
 updateClock();
+
+// select the button and the body
+const button = document.getElementById('startButton');
+const body = document.body;
+
+// when the button is clicked, toggle dark mode
+toggleButton.addEventListener("click", function() {
+    body.classList.toggle("dark");
+
+})
